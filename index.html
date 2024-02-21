@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="reset.css">        
+    </head>
+    <body>
+        <header>
+            <div class="contenedor">
+                <div class="header_img">
+                    <img src="Img/Logo.svg" alt="Logo de Alura">
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="contenedor">
+                <div class="encriptador">
+                    <form class="encriptador_form">
+                        <div class="text_in">
+                            <textarea name="text_in_area" id="texto" placeholder="Ingrese el texto a Encriptar aquí..." required></textarea>
+                            <div class="text_in_info">
+                                <div class="info">
+                                    <img src="Img/alerta.svg" alt="Alerta">
+                                    <p id="warning">Solo admite letras minúsculas y sin acentos.</p>
+                                </div>
+                                <div class="text_in_btns">
+                                    <input id="enc" type="button" value="Encriptar">
+                                    <input id="des" type="button" value="Desencriptar">
+                                </div> 
+                            </div>
+                        </div>
+                    </form> 
+                    <div class="text_out_sec">
+                        <div class="out_content">
+                            <div class="content" id="default">
+                                <div class="text_out_img">
+                                    <img src="Img/Muñeco.svg" alt="Imagen Muñeco">
+                                </div><p>Ningún mensaje fue encontrado</p>
+                                <p><strong><em>Ingresa el texto que desees ENCRIPTAR o DESENCRIPTAR.</em></strong></p>
+                            </div>
+                            <div class = "content invisible" id="result">
+                                <textarea name="text_out_area" id="texto_out" disabled></textarea>
+                                <button id="copiar">Copiar</button>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <footer class="pie-pagina">
+                <p>&copy; 2024 | Eliézer Berroa</p>
+                <a class="pgn" href="https://www.linkedin.com/in/eliezer-berroa/" target="_blank" rel="noopener noreferrer"><img src="Img/linkedin.png" alt="icono LinkedIn"></a>
+                <a class="pgn" href="https://github.com/EBerroa/" target="_blank" rel="noopener noreferrer"><img src="Img/github.png" alt="icono GitHub"></a>
+            </footer>
+        </main>
+        <script src="app.js"></script>
+    </body>
+   </html>
